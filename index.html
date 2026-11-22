@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Qué comer hoy? — Lógica Difusa</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="barra">
+  <div class="barra-in">
+    <button class="marca" data-ir="inicio" aria-label="Ir al inicio">🍽️ ¿Qué comer hoy?</button>
+    <nav>
+      <button data-ir="inicio" class="activo">Inicio</button>
+      <button data-ir="buscar">Encuentra tu platillo</button>
+      <button data-ir="banco">Banco de platillos</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PRESENTACIÓN ============ -->
+<section id="inicio" class="vista activa">
+  <div class="portada">
+    <p class="etiqueta">Inteligencia Artificial · Proyecto Final</p>
+    <h1>¿Qué comer hoy?</h1>
+    <h2>Recomendador de platillos aplicando Lógica Difusa</h2>
+    <p class="lead">Cuéntanos cómo traes el antojo, sin números ni tecnicismos, y el sistema te dice qué platillo se parece más a lo que quieres.</p>
+    <button class="btn grande" data-ir="buscar">Empezar →</button>
+
+    <div class="equipo">
+      <h3>Equipo</h3>
+      <ul>
+        <li>Arturo Bravo Reyes</li>
+        <li>Diego Mendoza Chávez</li>
+      </ul>
+      <p class="pequeno">Universidad Autónoma de Querétaro · 6.º semestre · Inteligencia Artificial</p>
+    </div>
+  </div>
+
+  <div class="pasos">
+    <div class="paso"><span>1</span><p><b>Cuéntanos tu antojo</b><br>Mueve los controles y elige opciones con frases normales.</p></div>
+    <div class="paso"><span>2</span><p><b>El sistema compara</b><br>Cruza tu antojo con 20 platillos usando lógica difusa.</p></div>
+    <div class="paso"><span>3</span><p><b>Recibe tu recomendación</b><br>Si nada se parece lo suficiente, te lo dice con honestidad.</p></div>
+  </div>
+</section>
+
+<!-- ============ CAPTURA + RESULTADO ============ -->
+<section id="buscar" class="vista">
+  <h2>Cuéntanos tu antojo</h2>
+  <p class="sub">Responde lo que quieras. Lo que no te importe, déjalo como está.</p>
+
+  <form id="formulario" autocomplete="off">
+    <label class="campo-nombre">Tu nombre
+      <input type="text" id="nombre" placeholder="Escribe tu nombre (opcional)" maxlength="40">
+    </label>
+    <div id="preguntas" class="preguntas"></div>
+    <div class="acciones">
+      <button type="submit" class="btn grande">🔍 Recomiéndame algo</button>
+      <button type="button" id="limpiar" class="btn secundario">Limpiar</button>
+    </div>
+  </form>
+
+  <div id="resultado" class="resultado" aria-live="polite"></div>
+</section>
+
+<!-- ============ BANCO ============ -->
+<section id="banco" class="vista">
+  <h2>Banco de platillos</h2>
+  <p class="sub">Estos son los 20 platillos precargados en el sistema. Cada número indica qué tanto tiene cada platillo de una característica
+     (0 = nada, 1 = al máximo). El usuario no ve ni captura estos valores: son parte del sistema.</p>
+  <div class="tabla-wrap"><table id="tabla-banco"></table></div>
+</section>
+
+</main>
+
+<footer>
+  <p>Arturo Bravo Reyes · Diego Mendoza Chávez — Recomendador de platillos aplicando Lógica Difusa</p>
+</footer>
+
+<script src="datos.js"></script>
+<script src="motor.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
