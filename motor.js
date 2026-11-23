@@ -1,5 +1,5 @@
 /*
- * motor.js — Motor de lógica difusa
+ * motor.js - Motor de lógica difusa
  *
  * Cada platillo es un conjunto difuso sobre el universo de 15 características
  * (grado de pertenencia en [0,1]). El perfil del usuario es otro conjunto difuso

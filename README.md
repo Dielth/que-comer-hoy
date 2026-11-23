@@ -64,6 +64,6 @@ HTML, CSS y JavaScript puros (sitio estático publicado con GitHub Pages).
 
 ## Referencias
 
-- Zadeh, L. A. (1965). Fuzzy sets. *Information and Control, 8*(3), 338–353.
+- Zadeh, L. A. (1965). Fuzzy sets. *Information and Control, 8*(3), 338-353.
 - Klir, G. J., & Yuan, B. (1995). *Fuzzy Sets and Fuzzy Logic: Theory and Applications*. Prentice Hall.
 - Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach* (4.ª ed.). Pearson.

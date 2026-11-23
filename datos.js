@@ -1,5 +1,5 @@
 /*
- * datos.js — "Base de datos" del sistema (Módulo Pre-cargado)
+ * datos.js - "Base de datos" del sistema (Módulo Pre-cargado)
  *
  * Diseño relacional (ver diagrama en el reporte):
  *   CARACTERISTICA(id, clave, nombre, tipo, ...)   -> 15 filas

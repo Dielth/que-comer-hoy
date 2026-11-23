@@ -1,4 +1,4 @@
-/* app.js — interfaz: navegación, captura del perfil, resultados y banco de platillos */
+/* app.js - interfaz: navegación, captura del perfil, resultados y banco de platillos */
 
 const CFG = {
   umbral: UMBRAL_CONFIANZA,
